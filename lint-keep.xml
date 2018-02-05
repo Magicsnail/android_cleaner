@@ -1,43 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <version>1.0</version>
-    <!-- 注意：新添加的资源必须设置remark，便于未来维护 -->
 	<!-- 注意：所有的路径均相对于工程根目录，当前仅支持Android studio标准方式的根目录 -->
 	<!-- modules: 用于支持按目录keep -->
 
     <modules>
-    	<module path="/libraries/qupai" />
-    	<module path="/libraries/Camera" />
+    	<module path="/xapp" />
+    	<module path="/libraries/yapp" />
     </modules>
 
     <drawables>
-    	<drawable file="/biz_xxx/src/main/res/drawable-xxhdpi/xxxxxxx.png"
-        	remark="注意：Drawable的示例，请务必添加remark便于未来维护"/>
-
-        <drawable prefix="kakalib_" remark="火眼扫描相关" />
-		<drawable prefix="umeng_socialize_" remark="友盟分享" />
-		<drawable prefix="alimember_" remark="统一登录"/>
-		<drawable prefix="aliuser_" remark="统一登录" />
-		<drawable prefix="openaccount_" remark="统一登录" />
-		<drawable file="/app_main/src/debug/res/drawable/yw_1222.jpg" />
-		<drawable file="/app_main/src/debug/res/drawable/yw_1222_mwua.jpg" />
-		<drawable file="/app_main/src/main/res/drawable/yw_1222.jpg" />
-		<drawable file="/app_main/src/main/res/drawable/yw_1222_mwua.jpg" />
-		<drawable file="/biz_login/src/main/res/drawable-xhdpi/login_button_bg.png" remark="aliuser_multi_site_login_fragment使用"/>
-		<drawable file="/biz_login/src/main/res/drawable/login_taobao_button_bg.xml" remark="aliuser_multi_site_login_fragment使用" />
-
-        	
-    </drawables>
+    	<drawable file="/xxx/src/main/res/drawable-xxhdpi/xxxxxxx.png" remark="keep指定文件，路径为相对路径"/>
+        <drawable prefix="xyz_" remark="keep以xyz_为前缀的drawable" />
+	</drawables>
 
     <layouts>
-        <layout file="/biz_circles/src/main/res/layout/yyyyy.xml"
-        	remark="注意：layout的示例，请务必添加remark便于未来维护"/>
-
-		<layout prefix="umeng_socialize_"
-        	remark="友盟分享" />
-        <layout prefix="kakalib_"
-        	remark="火眼扫描相关" />
-        	
+        <layout file="/biz_circles/src/main/res/layout/yyyyy.xml" remark="keep指定的layout"/>
+		<layout prefix="abc_" remark="keep指定前缀的layout文件" />
     </layouts>
 
 </project>
