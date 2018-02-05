@@ -1,0 +1,1 @@
+# lint_resource_cleaner
